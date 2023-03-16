@@ -33,7 +33,9 @@
 				.then((age) => {
 					return { age };
 				})
-				
+				.then((result) => {
+					alert(`Final object: ${JSON.stringify(result)}`);
+				})
 				.catch(({ age, name }) => {
 					alert(`Oh sorry ${name}. You aren't old enough.`);
 				});
